@@ -1,0 +1,39 @@
+/* 
+	Hero unit
+*/
+$hero-unit-height: 495px; // Hero Unit and Videocover
+.hero-unit {
+	@include bg-img-control-center;
+	height: $hero-unit-height;
+	position: relative;
+	overflow: hidden;
+	&.video-bg {
+		overflow: hidden;
+		height: $hero-unit-height;
+	}
+	.overlay,
+	.hero-unit-pic {
+		@include position(absolute, 0 0 0 0);
+		height: $hero-unit-height;
+	}
+	.hero-unit-pic {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.scroll-down {
+		@include position(absolute, null 0 0 0);
+		text-align: center;
+		width: 100%;
+		div {
+			display: inline-block;
+		}
+		a {
+			@include flex-column-center;
+			@include flex-align-center;
+			height: 70px;
+			width: 110px;
+		}
+	}
+}

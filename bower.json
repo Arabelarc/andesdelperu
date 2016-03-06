@@ -1,0 +1,9 @@
+{
+  "name": "easyboxmodel",
+  "version": "1.0.0",
+  "dependencies": {
+   "modernizr": "latest",
+   "respond": "latest",
+   "html5shiv": "latest"
+  }
+}

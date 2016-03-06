@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content=""> 
+    <meta name="author" content="@ArabelaRojas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <script src="//use.typekit.net/fct8sgn.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
+    <link href="assets/css/ebm.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-wrapper"> <!-- Body -->
+      <header class="menu-section-mobile hidden-md hidden-lg bg-gray-dark minh-63 fixed">
+        <div class="logo-menu-mobile">
+          <a href=""><img src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <nav>
+          <ul role="navigation" class="hidden text-uppercase ">
+            <li><a class="light font-s-20 pt-70" href="">Inicio</a></li>
+            <hr width="50px">
+            <li><a class="light font-s-20 pv-7" href="">Nosotros</a></li>
+            <hr width="50px">
+            <li><a class="light font-s-20 pv-7" href="#">Galeria</a></li>
+            <hr width="50px">
+            <li><a class="light font-s-20 pv-7" href="">contacto</a></li>
+            <hr width="50px">
+          </ul>
+        </nav>
+      </header>
+      <header class="header-scroll header hidden-xs hidden-sm">
+        <div class="container">
+          <div class="row">
+            <div class="header-left col-sm-3 text-center">
+              <div class="logo"><a href=""><img src="assets/img/logo.png" class="img-responsive" alt="Logo"></a></div>
+            </div>
+              <div class="header-right col-sm-2"> 
+              </div>
+            <div class="header-right col-sm-7">
+              <nav class="header-nav-center pt-7 thin text-gray text-uppercase nav-list">
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="#">galeria</a>
+                <a href="">contacto</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header class="header hidden-xs hidden-sm" >
+        <div class="container">
+          <div class="row">
+            <div class="header-left col-sm-3 text-center">
+              <div class="logo"><a href=""><img src="assets/img/logo.png" class="img-responsive" alt="Logo Utec ventures"></a></div>
+            </div>
+              <div class="header-right col-sm-2"> 
+              </div>
+            <div class="header-right col-sm-7">
+              <nav class="header-nav-center pt-7 thin text-gray text-uppercase nav-list">
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="#">galeria</a>
+                <a href="">contacto</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="overlay-site-complete"></div>
+      <section class="hero-unit flex-column-end img-responsive" id="scroll-head" style="background-image: url(assets/img/mineria.jpg)">
+        <div class="container text-left pv-70 ph-70 mh-0 up-overlay">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3 class="light text-white pb-63 title-header-responsive lh-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum architecto neque corporis, aspernatur at saepe alias eum, voluptatibus minus delectus quibusdam officiis sunt eveniet vero voluptate optio nihil! Culpa, eaque.</h3>
+            </div>
+            <div class="col-md-6 hidden-xs hidden-sm"></div>
+          </div>
+        </div>
+        <div class="scroll-down up-overlay"><div><a id="arrow" class="arrow" href="#site-content"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIwMS42MTEgMjAxLjYxMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAxLjYxMSAyMDEuNjExOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwb2x5Z29uIHBvaW50cz0iMTAwLjgwOSwxNTUuMzkgMCw1MS41OTYgNS41MzYsNDYuMjIxIDEwMC44MDksMTQ0LjMxNyAxOTYuMDg1LDQ2LjIyMSAyMDEuNjExLDUxLjU5NiAgICAgICAgICIgZmlsbD0iI0ZGRkZGRiIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a></div></div>
+      </section>
+      <section class="pv-49 site-us bg-gray-lighter text-center" id="site-content">
+        <div class="container-md">
+          <div class="row">
+            <h2 class="text-gray-dark light">Nosotros</h2>
+            <div class="col-lg-2 hidden-sm hidden-xs"></div>
+            <div class="col-lg-8 col-xs-12 col-sm-12">
+              <p class="text-gray thin text-center lh-12 font-s-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, hic aliquid similique qui, recusandae quasi adipisci laborum nisi illum nemo expedita eaque facere rerum illo velit ipsam cumque id sunt, lorem ipsum dolor sit amet, consectetur adipisicing elit. Error possimus tenetur architecto quam in rem molestiae eveniet, aspernatur hic laborum! Minus quae, repellendus facilis adipisci saepe recusandae autem est tempore.</p>
+            </div>
+            <div class="col-lg-2 hidden-sm hidden-xs"></div>
+          </div>
+        </div>
+      </section>
+      <section class="site-portafolio flex-row-center text-center pb-21 mb-70">
+        <div class="container">
+          <h2 class="text-gray-dark pt-70 pb-28 light">Productos Destacados</h2>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="content-img-portafolio-grid">
+                <a href="#"><img src="assets/img/ropa1.jpg" alt="" style="width:264px; height:204px"></a>
+              </div>
+              <div class="col-sm-10 text-content-portafolio text-left">
+                <h4 class="text-gray-dark thin mt-28"><a href="#">Nombre del Producto</a></h4>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin" href="#">Ver más <span>&#187;</span></a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="content-img-portafolio-grid">
+                <a href="#"><img src="assets/img/casco.jpg" alt="" style="width:264px; height:204px"></a>
+              </div>
+              <div class="col-sm-10 text-content-portafolio text-left">
+                <h4 class="text-gray-dark thin mt-28"><a href="#">Nombre del Producto</a></h4>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin" href="#">Ver más <span>&#187;</span></a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="content-img-portafolio-grid">
+                <a href="#"><img src="assets/img/chaleco.jpeg" alt="" style="width:264px; height:204px"></a>
+              </div>
+              <div class="col-sm-10 text-content-portafolio text-left">
+                <h4 class="text-gray-dark thin mt-28"><a href="#">Nombre del Producto</a></h4>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin mt-28" href="#">Ver más <span>&#187;</span></a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="content-img-portafolio-grid">
+                <a href="#"><img src="assets/img/activez.jpg" alt="" style="width:264px; height:204px"></a>
+              </div>
+              <div class="col-sm-10 text-content-portafolio text-left">
+                <h4 class="text-gray-dark thin mt-28"><a href="#">Nombre del Producto</a></h4>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin mt-28" href="#">Ver más <span>&#187;</span></a>
+              </div>
+            </div>
+          </div> 
+          <div class="row pt-7">
+            <div class="col-sm-12 mt-35 flex-row-center ">
+              <div>
+                <a href="" class="btn btn-md btn-primary light uppercase">Ver productos <span>&#187;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="site-blog bg-white text-center flex-row-center">
+        <div class="container-md mb-35">
+          <div class="row">
+            <h2 class="text-gray-dark pt-70 light">Mas Productos</h2>
+            <div class="col-lg-2 hidden-sm hidden-xs"></div>
+            <div class="col-lg-8 col-xs-12 col-sm-12">
+              <h4 class="text-gray thin text-center lh-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, commodi, iusto. Aliquid at accusamus nobis inventore illo facere eos, accusantium nihil possimus.</h4>
+            </div>
+            <div class="col-lg-2 hidden-sm hidden-xs"></div>
+          </div>
+        <div>
+          <div id="owl-demo" class="mv-21">
+          
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="item">
+              <img src="assets/img/casco.jpg" class="img-responsive" alt="Owl Image">
+              <h4 class="text-gray">Nombre del Producto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+           
+          </div>        
+        </div>          
+          <div class="row pb-42">
+            <div class="col-sm-12 mt-35 flex-row-center ">
+              <div>
+                <a href="" class="btn btn-md btn-primary light uppercase btn-lee-todos">Lee Todos <span>&#187;</span></a>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <section class="section-sponsors pv-49 bg-gray-lighter">
+        <div class="container text-center">
+          <h2 class="text-gray-darker pt-21 light">Clientes</h2>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <p class="text-gray light text-center font-s-20 lh-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, commodi, iusto. Aliquid at accusamus nobis inventore illo facere eos, accusantium nihil possimus.</p>
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+        </div>
+        <div class="container-md mv-42">
+          <div class="row">
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row pt-35">
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-xs-12 col-sm-12 flex-row-center">
+              <div class="logo-sponsors-home">
+                <img src="assets/img/logo-sponsor.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="overlay"></div>
+      <section class="hero-end" style="background-image: url(assets/img/hero-end.jpg)">
+        <div class="container-md text-center pv-70 up-overlay">
+          <h2 class="light text-white thin">Diversidad de Productos a tu alcanze</h2>
+          <p class=" text-white mb-14 thin font-s-20 lh-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa maiores quidem culpa id a dolores mollitia dolor consectetur laborum, laudantium reiciendis molestiae corporis voluptates inventore quasi perferendis facere natus autem.</p><br><br> 
+          <a href="" class="btn btn-md btn-primary light uppercase">Ver Productos</a>
+        </div>        
+      </section>
+    </div><!-- END: Body -->
+    <div class="footer"> <!-- FOOTER -->
+      <div class="site-map pv-28 bg-gray-darker hidden-xs">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-sm-12">
+              <h6 class="text-white">Nombre de la Empresa</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  <!-- END:Footer -->
+    <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->
+    <script src="assets/js/scripts.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+          autoPlay: 3000,
+          items : 4,
+          itemsDesktop : [1199,3],
+          itemsDesktopSmall : [979,3]
+        });
+
+      });
+    </script>
+    <script>
+       $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+       });
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
+  </body>
+</html>
