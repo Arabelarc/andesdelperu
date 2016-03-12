@@ -5849,6 +5849,11 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 /*UPPERCASE*/
 .uppercase {
   text-transform: uppercase;
@@ -5879,14 +5884,8 @@ body {
 }
 
 /*INPUT STYLE*/
-.input-form-postulacion {
-  height: 42px;
-  width: 100%;
-}
-
 .input-message {
   height: 152px;
-  width: 100%;
 }
 
 /*FOOTER STYLE*/
@@ -6336,6 +6335,18 @@ body {
     position: absolute;
   }
 }
+/*PAGINATION*/
+.pagination-custom {
+  border: 1px solid white !important;
+  margin-left: 0 !important;
+}
+.pagination-custom:hover {
+  border: 1px solid #FF9F0D !important;
+  background-color: white !important;
+  color: #00BFDF;
+  transition: 0.3s all ease-in-out;
+}
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
