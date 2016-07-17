@@ -44,5 +44,11 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
+## For security do not publish the following files
+system/expressionengine/cache/software_registration
+system/expressionengine/config/database.php
+system/expressionengine/config/config.php
+.htaccess
+
 ## WORDPRESS
 wp-content/uploads/**
